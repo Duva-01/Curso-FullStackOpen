@@ -1,0 +1,32 @@
+title Ejercicio 0.4: Nueva Nota
+
+note over navegador:
+Se envian los datos a la red con el nombre de prueba.
+end note
+
+navegador->servidor: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
+
+note over servidor:
+El servidor almacena la nota enviada.
+end note
+
+servidor-->navegador: Volver a solicitar un HTTP GET con las notas actualizadas
+navegador->servidor: GET HTTP https://studies.cs.helsinki.fi/exampleapp/notes
+servidor-->navegador: Código HTML
+navegador->servidor: GET HTTP https://studies.cs.helsinki.fi/exampleapp/main.css
+servidor-->navegador: main.css
+navegador->servidor: GET HTTP https://studies.cs.helsinki.fi/exampleapp/main.js
+servidor-->navegador: main.js
+
+note over navegador:
+El navegador ejecuta el archivo "main.js" que solicita los datos.json
+end note
+
+navegador->servidor: GET HTTP https://studies.cs.helsinki.fi/exampleapp/data.json
+servidor-->navegador: [{ contenido: "Prueba", fecha: "2023-07-1" }, ...]
+
+note over navegador:
+El navegador ejecuta el controlador de eventos
+que muestra las notas para su visualización
+end note
+
