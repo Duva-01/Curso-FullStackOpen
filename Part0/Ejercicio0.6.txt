@@ -1,0 +1,24 @@
+title Ejercicio 0.6: Nueva nota
+
+note over navegador:
+El usuario ingresa una nota en el campo de entrada del formulario
+y hace clic en el botón "Guardar".
+end note
+
+note over navegador:
+spa.js agrega la nota al DOM
+y la envía al servidor.
+end note
+
+navegador->servidor: POST HTTP https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+
+note over servidor:
+El servidor almacena la nota.
+end note
+
+servidor-->navegador: HTTP 201
+
+note over navegador:
+El navegador ejecuta el controlador de eventos 
+que actualiza las notas a mostrar.
+end note
