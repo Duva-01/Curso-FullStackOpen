@@ -1,0 +1,26 @@
+title Ejercicio 0.5: Aplicación de una sola página
+
+note over navegador:
+El usuario navega a la página.
+end note
+
+navegador->servidor: GET HTTP https://studies.cs.helsinki.fi/exampleapp/spa
+servidor-->navegador: Codigo HTML
+navegador->servidor: GET HTTP https://studies.cs.helsinki.fi/exampleapp/main.css
+servidor-->navegador: main.cs
+navegador->servidor: GET HTTP https://studies.cs.helsinki.fi/exampleapp/spa.js
+servidor-->navegador: spa.js
+
+note over navegador:
+El navegador ejecuta spa.js que solicita data.json.
+end note
+
+navegador->servidor: GET HTTP https://studies.cs.helsinki.fi/exampleapp/data.json
+servidor-->navegador: [{ content: "Prueba", date: "2023-07-04" }, ...]
+
+note over navegador:
+spa.js agrega los datos solicitados al DOM.
+
+El navegador ejecuta el controlador de eventos 
+que carga las notas a mostrar.
+end note
