@@ -17,5 +17,3 @@ En esta sección, profundizamos en el concepto de estado en los componentes de R
 ### d. Un estado más complejo, depurando aplicaciones React
 
 En esta última sección, avanzamos hacia estados más complejos en nuestros componentes. Aprendimos a manejar estados de objetos y arreglos, y cómo actualizar partes específicas del estado utilizando la función `setState`. También exploramos herramientas de depuración en React, como la extensión React Developer Tools y el uso de `console.log` para inspeccionar el estado y el flujo de datos en nuestras aplicaciones.
-
-En general, la Parte 1 del Curso Full Stack nos brindó los fundamentos necesarios para trabajar con React y comprender cómo construir componentes, manipular estados y responder a eventos en una aplicación de React. Estamos listos para avanzar a la Parte 2, donde ampliaremos nuestras habilidades y construiremos proyectos más completos.
