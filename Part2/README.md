@@ -1,21 +1,19 @@
-## Full Stack Course Part 2 Overview
+## Resumen de la Parte 2 del Curso Full Stack
 
-In Part 2 of the Full Stack Course, we focused on enhancing the functionality and user experience of our projects. Let's take a look at the progress we made in three projects: "Course Information," "Countries," and "Phonebook."
+En la Parte 2 del Curso Full Stack, nos centramos en mejorar la funcionalidad y la experiencia del usuario en nuestros proyectos. Veamos el progreso que logramos en tres proyectos: "Información del Curso", "Países" y "Agenda Telefónica".
 
-### Course Information
+### Información del Curso
 
-In the Course Information project, I implemented additional features to manage course data. I created a form to add new courses, allowing users to input the course name and number of exercises. I also implemented a feature to calculate the total number of exercises across all courses. To achieve this, I used the `reduce` function to iterate over the course array and accumulate the exercise count.
+En el proyecto de Información del Curso, implementé características adicionales para gestionar los datos de los cursos. Creé un formulario para agregar nuevos cursos, permitiendo a los usuarios ingresar el nombre del curso y el número de ejercicios. También implementé una función para calcular el número total de ejercicios de todos los cursos. Para lograr esto, utilicé la función `reduce` para recorrer el array de cursos y acumular la cantidad de ejercicios.
 
-### Countries
+### Países
 
-In the Countries project, I expanded the functionality to fetch and display information about various countries. I integrated with the REST Countries API to retrieve data such as country name, capital, population, languages, and flag. I implemented a search feature that allows users to filter countries by name, making the application more user-friendly. Additionally, I added a button to show detailed information about a specific country, displaying additional data such as currency, timezones, and regional blocs.
+En el proyecto de Países, amplié la funcionalidad para buscar y mostrar información sobre varios países. Me integré con la API REST Countries para obtener datos como el nombre del país, la capital, la población, los idiomas y la bandera. Implementé una función de búsqueda que permite a los usuarios filtrar los países por nombre, lo que hace que la aplicación sea más fácil de usar. Además, agregué un botón para mostrar información detallada sobre un país específico, mostrando datos adicionales como la moneda, las zonas horarias y los bloques regionales.
 
-### Phonebook
+### Agenda Telefónica
 
-In the Phonebook project, I created a simple phonebook application using React and a backend server. I integrated with an Express.js server and implemented functionalities to add, delete, and filter contacts. I used the Axios library to handle HTTP requests to the backend server and managed the state of contacts using React's `useState` hook. Additionally, I implemented validation checks to prevent duplicate contact entries and provided feedback to the user through alerts.
+En el proyecto de la Agenda Telefónica, creé una aplicación sencilla de agenda telefónica utilizando React y un servidor backend. Me integré con un servidor Express.js e implementé funcionalidades para agregar, eliminar y filtrar contactos. Utilicé la biblioteca Axios para manejar las solicitudes HTTP al servidor backend y gestioné el estado de los contactos utilizando el hook `useState` de React. Además, implementé verificaciones de validación para evitar la entrada de contactos duplicados y proporcioné comentarios al usuario a través de alertas.
 
-To enhance the user experience, I added notifications to display success or error messages when performing operations like adding, updating, or deleting contacts. I also improved the error handling by displaying error messages and logging them to the console for debugging purposes.
+Para mejorar la experiencia del usuario, agregué notificaciones para mostrar mensajes de éxito o error al realizar operaciones como agregar, actualizar o eliminar contactos. También mejoré el manejo de errores al mostrar mensajes de error y registrarlos en la consola con fines de depuración.
 
-Furthermore, I addressed the synchronization issue that arises when multiple users interact with the application simultaneously. To handle this, I introduced object versioning in the backend server and modified the frontend code to include the version when performing operations like deleting contacts. This approach ensures data consistency and avoids conflicts when deleting contacts in different browser instances.
-
-Overall, Part 2 of the Full Stack Course allowed me to expand the functionalities of the projects, improve the user experience, and handle synchronization issues effectively. I look forward to applying these learnings to future projects and further enhancing my full-stack development skills.
+Además, abordé el problema de sincronización que surge cuando varios usuarios interactúan con la aplicación al mismo tiempo. Para manejar esto, introduje la versión del objeto en el servidor backend y modifiqué el código frontend para incluir la versión al realizar operaciones como eliminar contactos. Este enfoque garantiza la consistencia de los datos y evita conflictos al eliminar contactos en diferentes instancias del navegador.
