@@ -1,15 +1,14 @@
 {
     "version": 2,
     "builds": [
-      {
-        "src": "index.js",
-        "use": "@now/node"
-      }
+      { "src": "/build/**", "use": "@vercel/static" },
+      { "src": "index.js", "use": "@vercel/node" }
     ],
     "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "index.js"
-      }
+      { "src": "/static/(.*)", "dest": "/build/static/$1" },
+      { "src": "/(favicon.ico|logo192.png|logo512.png|manifest.json|robots.txt)", "dest": "/build/$1" },
+      { "src": "/(.*).js", "dest": "index.js" },
+      { "src": "/(.*)", "dest": "/build/index.html" }
     ]
   }
+  
