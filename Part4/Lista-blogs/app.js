@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const blogsRouter = require('./controllers/blogs');
 const usersRouter = require('./controllers/users');
 const jwt = require('jsonwebtoken');
+require('dotenv').config();
 
 const app = express();
 
@@ -20,7 +21,7 @@ app.use(cors());
 app.use(express.json());
 
 app.use('/api/blogs', blogsRouter);
-app.use('/api/users', usersRouter); // Mueve esta línea después de app.use(express.json())
+app.use('/api/users', usersRouter); 
 
 const getTokenFrom = (request) => {
   const authorization = request.get('authorization');
@@ -33,9 +34,11 @@ const getTokenFrom = (request) => {
 app.use((request, response, next) => {
   const token = getTokenFrom(request);
 
+  console.log("Token app.js: " + token)
   try {
     const decodedToken = jwt.verify(token, process.env.SECRET);
     if (decodedToken) {
+      request.token = token; 
       request.user = decodedToken;
     }
   } catch (error) {
@@ -44,6 +47,7 @@ app.use((request, response, next) => {
 
   next();
 });
+
 
 
 if (process.env.NODE_ENV === 'test') {

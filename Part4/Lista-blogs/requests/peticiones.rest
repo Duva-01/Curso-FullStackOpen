@@ -5,18 +5,14 @@ GET http://localhost:3003/api/blogs
 
 POST http://localhost:3003/api/blogs
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik5lc3RvcnJyMTk5NCIsImlkIjoiNjRhZDNiYjQxYWIwYzM4OTAyY2U1ZWNiIiwiaWF0IjoxNjg5MDk5MTM3fQ.iq64mA2AfJp8s2T-mCM7S6r_U9jHenJJ51bMLoo7zpM
 
 {
-  "title": "El blog de Juanito",
-  "author": "Juanito Perez",
-  "author": "juanitoblog.web",
-  "likes": "233"
+  "title": "El blog de Devidi",
+  "author": "Devidi",
+  "url": "devidi.web",
+  "likes": 45621
 }
-
-
-###
-
-GET http://localhost:3003/api/blogs
 
 ###
 
@@ -31,7 +27,23 @@ POST http://localhost:3003/api/users
 Content-Type: application/json
 
 {
+  "username": "Daviduuuu",
+  "name": "Duva-012",
+  "password": "shuffle2"
+}
+
+###
+
+GET http://localhost:3003/api/users
+
+###
+### Ejemplo inicio sesion usuario 
+###
+
+POST http://localhost:3003/api/users/login
+Content-Type: application/json
+
+{
   "username": "Nestorrr1994",
-  "name": "Nestor",
   "password": "paloma"
 }
