@@ -1,5 +1,6 @@
 # Curso FullStackOpen
-David Martinez Diaz
+
+![image](certificate-fullstack-grade1.png)
 
 ## Indice
 
