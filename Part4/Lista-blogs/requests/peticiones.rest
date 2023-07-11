@@ -1,0 +1,37 @@
+
+GET http://localhost:3003/api/blogs
+
+###
+
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{
+  "title": "El blog de Juanito",
+  "author": "Juanito Perez",
+  "author": "juanitoblog.web",
+  "likes": "233"
+}
+
+
+###
+
+GET http://localhost:3003/api/blogs
+
+###
+
+DELETE http://localhost:3003/api/blogs
+
+
+###
+### Crear usuario 
+###
+
+POST http://localhost:3003/api/users
+Content-Type: application/json
+
+{
+  "username": "Nestorrr1994",
+  "name": "Nestor",
+  "password": "paloma"
+}
