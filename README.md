@@ -1,6 +1,6 @@
 # Curso FullStackOpen
 
-![image](certificate-fullstack-grade1.png)
+![image](certificate-fullstack.png)
 
 ## Indice
 
